@@ -6,7 +6,6 @@
 		<meta name="renderer" content="webkit">
 		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width,viewport-fit=cover">
 		<title>{{ &articleSingle.title }} - {{ &OPT.siteName }}</title>
-		<div style="background:yellow;">调试数据: otherCodeA = "{{ &OPT.otherCodeA }}", contentLength = "{{ &articleSingle.contentLength }}"</div>
 		<meta name="keywords" content="{{ &keyWords }}" />
 		<meta name="description" content="{{ &OPT.siteDescription }}" />
 
@@ -29,6 +28,13 @@
 		{{ &OPT.codeBeforHead }}
 	</head>
 	<body class="archive paged category category-zhishi category-5 paged-2 category-paged-2 lang-cn el-boxed">
+		<!-- 调试信息 - 开始 -->
+		<div style="background: red; color: white; padding: 10px; margin: 10px; text-align: center;">
+		    ✅ 新模板已加载！<br>
+		    otherCodeA = "{{ &OPT.otherCodeA }}"<br>
+		    contentLength = "{{ &articleSingle.contentLength }}"
+		</div>
+		<!-- 调试信息 - 结束 -->
 		<header class="header">
 			<div class="container clearfix">
 				<div class="navbar-header">
